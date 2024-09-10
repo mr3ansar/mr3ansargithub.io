@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-   (function(){
-      emailjs.init("service_ksava8k");
-   })();
-</script> 
+    <script
+     type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	 emailjs.init({
+  publicKey: 'service_ksava8k',
+});
+	emailjs.sendForm('service_ksava8k', 'template_e05vtaj', this);
+	</script>
+	
 </head>
 
 <body>
@@ -146,19 +149,6 @@
             </div>
             <button type="submit" >Send Message</button>
         </form>
-		<script type="text/javascript">
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    // Send email using EmailJS
-    emailjs.sendForm('service_ksava8k', 'template_e05vtaj', this)
-      .then(function() {
-        alert('Message sent successfully!');
-      }, function(error) {
-        alert('Failed to send message. Error: ' + JSON.stringify(error));
-      });
-  });
-</script>
     </section>
 
     <!-- Footer -->
