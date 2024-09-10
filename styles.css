@@ -92,7 +92,14 @@ nav ul li a {
     text-align: center;
     margin-bottom: 20px;
 }
-
+img {
+  width: 100%; /* Adjusts to the size of its parent container */
+  max-width: 200px; /* Sets a maximum width */
+  height: auto; /* Keeps aspect ratio intact */
+  display: block; /* Ensures there's no extra space around images */
+  margin: 0 auto; /* Centers the image if inside a flex or block container */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
 .portfolio-item {
     display: inline-block;
     width: 30%;
@@ -102,6 +109,64 @@ nav ul li a {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+/* Slider container */
+.slider {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Each slide (image container) */
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Image */
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Button hover effect */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 /* Services Section */
 #services {

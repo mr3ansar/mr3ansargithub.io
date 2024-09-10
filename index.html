@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
    <link rel="stylesheet" href="styles.css">
+   
 </head>
 
 <body>
@@ -66,20 +67,30 @@
     </section>
 
     <!-- Portfolio Section -->
+	
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <h3>Project 1</h3>
-            <p>Short description of Project 1.</p>
-        </div>
-        <div class="portfolio-item">
-            <h3>Project 2</h3>
-            <p>Short description of Project 2.</p>
-        </div>
-        <div class="portfolio-item">
-            <h3>Project 3</h3>
-            <p>Short description of Project 3.</p>
-        </div>
+        <div class="slider">
+  <div class="slides">
+    <!-- Each image inside the slider -->
+    <div class="slide">
+      <img src="Design2.jpg" alt="Work 1">
+    </div>
+    <div class="slide">
+      <img src="Design1.jpg" alt="Work 2">
+    </div>
+    <div class="slide">
+      <img src="Design3.jpg" alt="Work 3">
+    </div>
+    <div class="slide">
+      <img src="Design4.jpg" alt="Work 4">
+    </div>
+  </div>
+  <!-- Navigation buttons -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+
     </section>
 
     <!-- Services Section -->
@@ -141,7 +152,7 @@
             <li><a href="https://github.com/mr3ansar">GitHub</a></li>
         </ul>
     </footer>
-
+	<script src="js/script.js"></script>
 </body>
 
 </html>
