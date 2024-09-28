@@ -49,6 +49,11 @@ nav ul li a {
 }
 
 /* Hero Section */
+a{
+	text-decoration:none;
+	color:grey;
+	cursor:pointer;
+}
 .hero {
     background: #f4f4f4;
     color: #333;
